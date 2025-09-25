@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bannerResponsivo {
+    display: none;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 0.5rem;
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+    display: flex;
+    height: calc(100vh - 50px);
+    background-color: #fff;
+}
+
+.banner .esquerda,
+.banner .direita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.banner .direita {
+    background-color: #fff;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.banner .esquerda div {
+    width: 500px;
+    height: 300px;
+    color: #000;
+    font-weight: bold;
+}
+
+.banner .esquerda h1 {
+    font-size: 50pt;
+    margin: 0;
+}
+
+.banner .esquerda h2 {
+    font-size: 20pt;
+    margin-bottom: 1rem;
+}
+
+.banner .esquerda p {
+    margin-left: 0.5rem;
+}
+
+.banner .direita {
+    background-color: grey;
+}
+
+.banner .direita img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contato {
+    margin-top: 5rem;
+}
+
+.contato img {
+    margin: 0.5rem;
+}
+
+.transicao {
+    height: 150px;
+    background-color: #444444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sobre {
+    width: 30%;
+    padding: 2rem;
+    font-size: 15pt;
+}
+
+.sobre h2 {
+    font-size: 25pt;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.sobre p {
+    margin: 1rem;
+}
+
+.sobre img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sobre div {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: grey;
+    margin: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sobre div:hover {
+    background-color: #616161;
+    transition: 0.5s;
+}
+
+.sobre img:hover {
+    filter: brightness(90%);
+    transition: 0.5s;
+}
+
+.descricao {
+    width: 70%;
+    padding: 2rem;
+}
+
+.descricao h2 {
+    font-size: 25pt;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.descricao p {
+    margin: 1rem;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(68, 68, 68);
+    padding: 0.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 800px) {
+    .banner .esquerda,
+    .banner .direita {
+        display: none;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre, .descricao {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .sobre h2, .descricao h2 {
+        font-size: 20pt;
+    }
+
+    .sobre p, .descricao p {
+        margin: 0.5rem 0;
+        font-size: 14pt;
+    }
+
+    .transicao {
+        height: 100px;
+    }
+
+    /* banner responsivo */
+    .bannerResponsivo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem;
+        font-weight: bold;
+    }
+
+    .fotoResponsiva {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    .bannerResponsivo h2{
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .bannerResponsivo h1{
+        font-size: 60px;
+    }
+
+    .bannerResponsivo p{
+        font-size: 15px;
+    }
+}
