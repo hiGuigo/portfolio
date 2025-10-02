@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
 .bannerResponsivo {
@@ -13,10 +14,15 @@ body {
     gap: 0.5rem;
     background-color: rgb(68, 68, 68);
     color: #fff;
-    font-weight: bold;
     position: relative;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho a:hover {
+    transition: 0.5s;
+    color: lightgrey;
+    text-decoration: none;
 }
 
 .banner {
@@ -42,7 +48,6 @@ body {
     width: 500px;
     height: 300px;
     color: #000;
-    font-weight: bold;
 }
 
 .banner .esquerda h1 {
@@ -97,7 +102,6 @@ body {
 .sobre h2 {
     font-size: 25pt;
     margin-bottom: 1rem;
-    font-weight: bold;
 }
 
 .sobre p {
@@ -116,7 +120,6 @@ body {
     background-color: grey;
     margin: 1rem;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 .sobre div:hover {
@@ -137,11 +140,48 @@ body {
 .descricao h2 {
     font-size: 25pt;
     margin-bottom: 1rem;
-    font-weight: bold;
 }
 
 .descricao p {
     margin: 1rem;
+}
+
+/* página projetos */
+#projetosContainer {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#projetosContainer article {
+    display: flex;
+    width: 60%;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#projetosContainer article img{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+}
+
+#projetosContainer article div{
+    height: auto;
+    margin-left: 1rem;
+}
+
+#projetosContainer article h1{
+    font-size: 16pt;
+}
+
+#projetosContainer article p{
+    margin-top: 1rem;
+    font-size: 12pt;
 }
 
 footer {
@@ -149,7 +189,6 @@ footer {
     color: #fff;
     background-color: rgb(68, 68, 68);
     padding: 0.5rem;
-    font-weight: bold;
     position: relative;
     z-index: 10;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
@@ -194,7 +233,6 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-weight: bold;
         text-align: center;
         height: calc(100vh)
     }
