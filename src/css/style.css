@@ -10,8 +10,10 @@ body {
 .cabecalho {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 50px;
-    gap: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background-color: rgb(68, 68, 68);
     color: #fff;
     position: relative;
@@ -23,6 +25,18 @@ body {
     transition: 0.5s;
     color: lightgrey;
     text-decoration: none;
+}
+
+.cabecalho figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .banner {
