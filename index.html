@@ -4,46 +4,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>Portfólio | Guilherme Alvarenga</title>
 
   <link rel="stylesheet" href="./src/css/reset.css" />
   <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 
 <body>
+  <header class="cabecalho">
+    <figure>
+      <img src="./src/assets/cogu.png" title="gosto de desenhar cogumelos :)" style="width: 30px" />
+      <h1>Portfólio</h1>
+    </figure>
+    <nav>
+      <a href="/">HOME</a>
+      <a href="./src/html/projetos.html">PROJETOS</a>
+      <a href="./src/html/certificados.html">CERTIFICADOS</a>
+    </nav>
+  </header>
+
   <main>
-    <header class="cabecalho">
-      <figure>
-        <img src="./src/assets/cogu.png" style="width: 30px" />
-        <h1>Portfólio</h1>
-      </figure>
-      <nav>
-        <a href="/">HOME</a>
-        <a href="./src/html/projetos.html">PROJETOS</a>
-        <a href="#">CERTIFICADOS</a>
-      </nav>
-    </header>
+    <!-- banner computador -->
     <section class="banner">
       <aside class="esquerda">
         <div>
           <h2>Olá, eu me chamo</h2>
           <h1>Guilherme!</h1>
-          <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+          <p>Estudante de Desenvolvimento de Software Multiplataforma</p>
 
           <div class="contato">
-            <img src="./src/assets/email.png" style="width: 50px" />
-            <img src="./src/assets/github.png" style="width: 50px" />
-            <img src="./src/assets/linkedin.png" style="width: 50px" />
+            <img src="./src/assets/email.png" style="width: 50px; cursor: pointer;"
+              onclick="navigator.clipboard.writeText('guilherme.alvarenga021@gmail.com').then(()=>alert('Endereço de email copiado!'))" />
+            <a href="https://github.com/hiGuigo"><img src="./src/assets/github.png" style="width: 50px" /></a>
+            <a href="https://www.linkedin.com/in/guilherme-alvarenga-0834b938a/"><img src="./src/assets/linkedin.png"
+                style="width: 50px; cursor: pointer;" /></a>
           </div>
         </div>
       </aside>
       <aside class="direita">
-        <img src="./src/assets/foto1.jpg" />
+        <img src="./src/assets/foto3.png" />
       </aside>
     </section>
+
+    <!-- banner dispositivo móvel -->
     <section class="bannerResponsivo">
       <div>
-        <img src="./src/assets/foto1.jpg" class="fotoResponsiva" />
+        <img src="./src/assets/foto2.jpg" class="fotoResponsiva" />
         <h2>Olá, eu me chamo</h2>
         <h1>Guilherme!</h1>
         <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
@@ -54,61 +60,79 @@
         <img src="./src/assets/linkedin.png" style="width: 50px" />
       </div>
     </section>
+
     <div class="transicao"></div>
     <section class="container">
-      <aside class="sobre">
+      <article class="sobre">
         <h2>Sobre mim</h2>
-        <img src="./src/assets/foto1.jpg" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          voluptatem facere repellendus praesentium eos nobis animi quam quis
-          reiciendis voluptatibus delectus, repellat consectetur tenetur
-          itaque aperiam dolor veniam impedit cum consequuntur eveniet
-          veritatis quibusdam illum totam! Voluptate provident hic architecto
-          voluptas quasi non aspernatur minima molestiae, consequatur error
-          illum nemo.
+        <img src="./src/assets/foto1.jpeg" />
+        <p>Me chamo Guilherme e tenho 24 anos. Acredito que minha motivação em explorar a área da tecnologia se dá pelo
+          meu gosto em resolver problemas. Recentemente me interessei muito pela parte não-técnica da área, trabalhando
+          principalmente minhas soft skills. Passei a ter grande curiosidade por regras de negócio e em como gerir um
+          projeto conciso. Além disso, tenho me dedicado principalmente nos estudos sobre front-end.
         </p>
-        <div><a href="./src/html/projetos.html" style="text-decoration: none; color: white;">PROJETOS</a></div>
-        <div>CERTIFICADOS</div>
-      </aside>
-      <aside class="descricao">
-        <h2>Currículo</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          voluptatem facere repellendus praesentium eos nobis animi quam quis
-          reiciendis voluptatibus delectus, repellat consectetur tenetur
-          itaque aperiam dolor veniam impedit cum consequuntur eveniet
-          veritatis quibusdam illum totam! Voluptate provident hic architecto
-          voluptas quasi non aspernatur minima molestiae, consequatur error
-          illum nemo.
-        </p>
+        <p>Sou extremamente paciente, gosto muito de ler e também de acampar. Embora eu goste das telas, prefiro de
+          passar meu tempo livre longe delas me dedicando à meditação e meus passatempos. Gosto de desenhar, jogar
+          sudoku, escrever e tocar violão.</p>
+        <p>Viver é bom!</p>
+        <nav>
+          <a href="./src/html/projetos.html">PROJETOS</a>
+          <a href="./src/html/certificados.html">CERTIFICADOS</a>
+        </nav>
+      </article>
 
-        <h2>Competências Técnicas (Hard Skills)</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          voluptatem facere repellendus praesentium eos nobis animi quam quis
-          reiciendis voluptatibus delectus, repellat consectetur tenetur
-          itaque aperiam dolor veniam impedit cum consequuntur eveniet
-          veritatis quibusdam illum totam! Voluptate provident hic architecto
-          voluptas quasi non aspernatur minima molestiae, consequatur error
-          illum nemo.
-        </p>
+      <article class="descricao">
+        <span>
+          <h2>Formação</h2>
+          <div>
+            <p>Ensino Superior - Faculdade de Tecnologia Prof. Jessen Vidal - FATEC</p>
+            <p>Curso: Desenvolvimento de Software Multiplataforma</p>
+            <p>Período: 2025 - presente</p>
+          </div>
+          <div>
+            <p>Ensino Superior - Faculdade de Tecnologia Prof. Jessen Vidal - FATEC</p>
+            <p>Curso: Análise e Desenvolvimento de Sistemas</p>
+            <p>Período: 2019 a 2022 (concluído)</p>
+          </div>
+          <div>
+            <p>Ensino Médio Técnico - Escola Técnica Prof. Everardo Passos - ETEP</p>
+            <p>Curso: Técnico em Informática para Internet</p>
+            <p>Período: 2016 a 2018 (concluído)</p>
+          </div>
+        </span>
 
-        <h2>Experiências em Projetos (Soft Skills)</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          voluptatem facere repellendus praesentium eos nobis animi quam quis
-          reiciendis voluptatibus delectus, repellat consectetur tenetur
-          itaque aperiam dolor veniam impedit cum consequuntur eveniet
-          veritatis quibusdam illum totam! Voluptate provident hic architecto
-          voluptas quasi non aspernatur minima molestiae, consequatur error
-          illum nemo.
-        </p>
-      </aside>
+        <span>
+          <h2>Competências Técnicas (Hard Skills)</h2>
+          <div>
+            <p>
+              <img
+                src="https://camo.githubusercontent.com/881f92421018bad3d499e11e36f02d932b24550e8c0ba11a4acd37d880526095/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3337373641423f7374796c653d666c6174266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465">
+              <img
+                src="https://camo.githubusercontent.com/73fecef5a0d9593022477e8bf54d43ea677d7916430bd4c3baf689095a6c0fef/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666c6174266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465">
+              <img
+                src="https://camo.githubusercontent.com/eccd5001692ad44a4ef6d63a5cdb46bbc236135d3bab0bcabde524cbfd8eb0e5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4353532d3536336437633f267374796c653d666c6174266c6f676f3d637373266c6f676f436f6c6f723d7768697465">
+              <img
+                src="https://camo.githubusercontent.com/0bf00f3279535bab88038a5e5754d65f335f86cbb41072b4980f4d95061de366/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2e4e45542d3531324244343f7374796c653d666c6174266c6f676f3d2e6e6574266c6f676f436f6c6f723d7768697465">
+            </p>
+          </div>
+        </span>
+
+        <span>
+          <h2>Experiências em Projetos (Soft Skills)</h2>
+          <div>
+            <p>• Sou proativo e gosto de executar minhas tarefas de forma organizada e estruturada.</p>
+            <p>• Prezo pelo diálogo e busco sempre considerar a opinião de toda a equipe.</p>
+            <p>• Gosto de oferecer apoio, técnico ou não, e vejo em cada oportunidade de ajudar uma chance de aprender e
+              aprimorar meus conhecimentos.</p>
+          </div>
+        </span>
+      </article>
     </section>
-
-    <footer>2025</footer>
   </main>
+
+  <footer>
+    <p>&copy; Guilherme Alvarenga - 2025</p>
+  </footer>
 </body>
 
 </html>
