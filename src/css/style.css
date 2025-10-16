@@ -198,18 +198,44 @@ body {
     background-color: red;
 }
 
+#projetosContainer article img:hover {
+    filter: brightness(90%);
+    transition: 0.5s;
+}
+
 #projetosContainer article div {
     height: auto;
     margin-left: 1rem;
 }
 
 #projetosContainer article h1 {
+    font-size: 20pt;
+}
+
+#projetosContainer article h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     font-size: 16pt;
 }
 
 #projetosContainer article p {
-    margin-top: 1rem;
     font-size: 12pt;
+    text-align: justify;
+    text-indent: 0.5rem;
+}
+
+#projetosContainer article a {
+    font-size: 12pt;
+    text-align: justify;
+    text-indent: 0.5rem;
+    text-decoration: none;
+    color:#000;
+}
+
+#projetosContainer article a:hover {
+    transition: 0.5s;
+    color: #616161;
+    text-decoration: none;
 }
 
 footer {
