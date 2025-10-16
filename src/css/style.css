@@ -175,15 +175,15 @@ body {
 }
 
 /* página projetos */
-#projetosContainer {
-    height: calc(100vh - 50px);
+.projetosContainer {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     align-items: center;
     padding-bottom: 1rem;
 }
 
-#projetosContainer article {
+.projetosContainer article {
     display: flex;
     width: 60%;
     margin-top: 2rem;
@@ -192,47 +192,46 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#projetosContainer article img {
+.projetosContainer article img {
     height: 150px;
     width: 150px;
     background-color: red;
 }
 
-#projetosContainer article img:hover {
+.projetosContainer article img:hover {
     filter: brightness(90%);
     transition: 0.5s;
 }
 
-#projetosContainer article div {
-    height: auto;
+.projetosContainer article div {
     margin-left: 1rem;
 }
 
-#projetosContainer article h1 {
+.projetosContainer article h1 {
     font-size: 20pt;
 }
 
-#projetosContainer article h2 {
+.projetosContainer article h2 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 16pt;
 }
 
-#projetosContainer article p {
+.projetosContainer article p {
     font-size: 12pt;
     text-align: justify;
     text-indent: 0.5rem;
 }
 
-#projetosContainer article a {
+.projetosContainer article a {
     font-size: 12pt;
     text-align: justify;
     text-indent: 0.5rem;
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
 
-#projetosContainer article a:hover {
+.projetosContainer article a:hover {
     transition: 0.5s;
     color: #616161;
     text-decoration: none;
@@ -292,7 +291,7 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: calc(100vh)
+        height: 100vh; 
     }
 
     .fotoResponsiva {
@@ -314,5 +313,21 @@ footer {
 
     .bannerResponsivo p {
         font-size: 12Spt;
+    }
+
+    .projetosContainer{
+        height: 100vh;
+    }
+
+    .projetosContainer article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .projetosContainer h1{
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
