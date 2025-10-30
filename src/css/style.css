@@ -195,7 +195,9 @@ body {
 .projetosContainer article img {
     height: 150px;
     width: 150px;
-    background-color: red;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #000;
 }
 
 .projetosContainer article img:hover {
