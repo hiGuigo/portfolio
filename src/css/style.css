@@ -110,7 +110,7 @@ body {
 .sobre {
     width: 30%;
     padding: 2rem;
-    font-size: 15pt;
+    font-size: 12pt;
 }
 
 .sobre h2 {
@@ -195,14 +195,8 @@ body {
 .projetosContainer article img {
     height: 150px;
     width: 150px;
-    border: 1px solid;
     border-radius: 5px;
     border-color: #000;
-}
-
-.projetosContainer article img:hover {
-    filter: brightness(90%);
-    transition: 0.5s;
 }
 
 .projetosContainer article div {
@@ -238,6 +232,33 @@ body {
     color: #616161;
     text-decoration: none;
 }
+/* fim página projetos */
+
+/* página certificados */
+.certificadosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.certificadosContainer article {
+    max-width: 50%;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.certificadosContainer article h1 {
+    font-size: 20pt;
+    margin-bottom: 1rem;
+}
+
+.certificadosContainer article img {
+    width: 100%;
+}
+/* fim página certificados */
 
 footer {
     text-align: center;
@@ -315,10 +336,6 @@ footer {
 
     .bannerResponsivo p {
         font-size: 12Spt;
-    }
-
-    .projetosContainer{
-        height: 100vh;
     }
 
     .projetosContainer article{
